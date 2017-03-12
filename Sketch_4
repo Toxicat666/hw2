@@ -3,8 +3,13 @@ function setup() {
 } 
 var x=100;
 var y=100;
+var s=3;
+
 function draw() { 
-  background(225);
-	ellipse(x,y,25,25);
-  x=x+3;
+background(220);
+	ellipse(x,y,20,20); 
+	x=x+s;
+if(x>400){
+s*=-1;
+}	
 }
